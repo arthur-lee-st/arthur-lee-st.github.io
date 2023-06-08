@@ -1,0 +1,443 @@
+html {
+    scroll-behavior: smooth;
+    -webkit-scroll-behavior: smooth;
+    scroll-padding-top:50px;
+}
+
+body {
+    background-color: white;
+    font-family: "Merriweather", Verdana, Geneva, Tahoma, sans-serif, serif;
+    font-size: 14px;
+    scroll-behavior: smooth;
+    -webkit-scroll-behavior: smooth;
+}
+
+/*adjusts color and underline of links*/
+a {
+    color: black;
+}
+
+a:hover {
+    color: black;
+    text-decoration: none;
+}
+
+.container-lg {
+    max-width: 1400px;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/*mobile menu on top*/
+.stickymenu-mobile {
+    display: none;
+}
+
+/*sidebar desktop*/
+#sidebar-desktop {
+    position: sticky;
+    z-index: 1000;
+    padding-top: 0;
+    width: 270px;
+    font-size: var(--sbt-sidebar-font-size);
+    top: 0 !important;
+    background: #fff;
+    border-right: 1px solid rgba(0,0,0,.1);
+    transition: margin-left .25s ease 0s,opacity .25s ease 0s,visibility .25s ease 0s;
+    overflow-y: unset;
+    height: 100vh;
+}
+  
+.sidebar-desktop {
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width:285px;
+    height: 100%;
+    padding: 20px 20px;
+    background-color: #424141;
+    overflow: auto;
+    scrollbar-color: rgb(198, 198, 198) #424141;
+    scrollbar-width: thin;
+}
+
+.sidebar-links {
+    color:white;
+}
+
+/*profilepic*/
+#profilepic-desktop {
+    padding-left:57px;
+    box-sizing: border-box;
+    margin-top: 0px;
+    margin-right: auto;
+    margin-bottom: 10px;
+    margin-left: auto;
+}
+
+#profilepic-desktop img{
+    border-radius: 50%;
+    height: 110px;
+}
+
+#name-desktop {
+    padding-left: 10px;
+    font-weight: bold;
+    font-size: 28px;
+    font-family: "Merriweather", Verdana, Geneva, Tahoma, sans-serif, serif;
+    color: white;
+}
+
+#role-desktop {
+    padding-left:10px;
+    color:white;
+}
+
+#education-sidebar-desktop {
+    list-style: none;
+    text-align: left;
+    padding-left:10px;
+    color:white;
+    font-size:12px;
+}
+
+#contact-links {
+    text-align: center;
+    padding-bottom:10px;
+}
+
+.mediaicon-desktop {
+    color:rgba(255, 255, 255, 0.82);
+    padding-right:5px;
+}
+
+.mediaicon-desktop:hover {
+    color: rgb(236, 236, 236);
+}
+
+.medialink-desktop {
+    color:rgba(255, 255, 255, 0.82);
+}
+
+.copyright-desktop {
+    text-align: center;
+    color:white;
+}
+
+#profile-card-mobile {
+    display:none;
+}
+
+/*sidebar mobile*/
+#sidebar-mobile {
+    display: none;
+}
+
+/*container card-header to take up whole row*/
+.row1 {
+    display: block;
+}
+
+#rightcolumn {
+    background-color: rgb(236, 236, 236);
+    padding-left:15px;
+    padding-right:0px;
+}
+
+.stickymenu-desktop {
+    background-color: rgb(236, 236, 236);
+    display: flex;
+    position: sticky;
+    top: 0;
+    z-index: 2020;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.menuitem-desktop {
+    padding-left:35px;
+    padding-right:35px;
+}
+
+.menuitem-desktop a {
+    color:#424141;
+}
+
+#wholecontentbox {
+    padding-bottom:12px;
+}
+
+.aboutme-padding {
+    background-color:rgb(236, 236, 236);
+}
+
+.projects-padding {
+    background-color:rgb(245, 245, 245);
+}
+
+.articles-padding {
+    background-color:rgb(236, 236, 236);
+}
+
+/*add shadow to cards*/
+.card {
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+}
+
+.card:hover {
+    box-shadow: 0 0px 0px rgb(0 0 0 / 0.2);
+}
+
+.cardaboutme {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.project-each-desktop {
+    margin-top:15px;
+    margin-bottom:15px;
+}
+
+/*each card's container*/
+.containerpaddings {
+    padding-top:15px;
+    padding-bottom:15px;
+    max-width: 1200px;
+    padding-left:15px;
+    padding-right:15px;
+}
+
+.github-button-padding {
+    padding-left:0px;
+    padding-right:0px;
+}
+
+.github-button {
+    background-color: gray;
+    border-color: gray;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    font-size: 12px;
+}
+
+.github-button:hover {
+    background-color: rgb(205, 205, 205);
+    border-color: rgb(205, 205, 205);
+}
+
+.github-button:focus {
+    background-color: gray;
+    border-color: gray;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    font-size: 12px;
+    box-shadow: none;
+}
+
+/*click and hold View on Github button*/
+.btn-primary:not(:disabled):not(.disabled):active {
+    background-color: rgb(205, 205, 205);
+    border-color: rgb(205, 205, 205);
+    padding-top: 1px;
+    padding-bottom: 1px;
+    font-size: 12px;
+    box-shadow: none;
+}
+.btn-primary:not(:disabled):not(.disabled):active:focus {
+    box-shadow: none;
+}
+
+.kaggle-button-padding {
+    padding-left:0px;
+    padding-right:0px;
+}
+
+.kaggle-button {
+    background-color: #4ec5f3;
+    border-color: #4ec5f3;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    font-size: 12px;
+}
+
+.kaggle-button:hover {
+    background-color: #9ad8f1;
+    border-color: #9ad8f1;
+}
+
+.kaggle-button:focus {
+    background-color: #4ec5f3;
+    border-color: #4ec5f3;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    font-size: 12px;
+    box-shadow: none;
+}
+
+/*click and hold View on Kaggle button*/
+.btn-secondary:not(:disabled):not(.disabled):active {
+    background-color: #9ad8f1;
+    border-color: #9ad8f1;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    font-size: 12px;
+    box-shadow: none;
+}
+.btn-secondary:not(:disabled):not(.disabled):active:focus {
+    box-shadow: none;
+}
+
+.project-row-mobile {
+    display:none
+}
+
+.project-image {
+    width:100%;
+}
+
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='424141' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='424141' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+
+.copyright-mobile {
+    display: none;
+}
+
+@media only screen and (max-width: 768px) {
+
+    html {
+        scroll-padding-top:50px;
+    }
+
+    .container-lg {
+        background-color: #424141;
+    }
+
+    #profile-card-mobile {
+        display: block;
+        border: 0px;
+        box-shadow: 0 0px 0px rgb(0 0 0 / 0.2);
+        background-color: #424141;
+    }
+
+    #profilepic-mobile {
+        text-align:center;
+        box-sizing: border-box;
+        margin-top: 0px;
+        margin-right: auto;
+        margin-bottom: 10px;
+        margin-left: auto;
+    }
+
+    #profilepic-mobile img{
+        border-radius: 50%;
+        height: 110px;
+    }
+
+    .stickymenu-desktop {
+        display:none;
+    }
+
+    .stickymenu-mobile {
+        background-color: #424141;
+        display: flex;
+        position: sticky;
+        top: 0;
+        z-index: 2020;
+        justify-content: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .menuitem-mobile {
+        padding-left:10px;
+        padding-right:10px;
+    }
+
+    .menuitem-mobile a {
+        color:white;
+    }
+
+    .mediaicon-mobile {
+        color:rgba(255, 255, 255, 0.82);
+        padding-left:5px;
+        padding-right:5px;
+    }
+    
+    .mediaicon-mobile:hover {
+        color: rgb(236, 236, 236);
+    }
+
+    #rightcolumn {
+        background-color: rgb(236, 235, 235);
+        padding-left:0px;
+    }
+
+    #sidebar-desktop {
+        display: none;
+    }
+
+    #sidebar-mobile {
+        display:block;
+        background-color: #424141;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    #name-mobile {
+        text-align: center;
+        font-weight: bold;
+        font-size: 26px;
+        font-family: "Merriweather", Verdana, Geneva, Tahoma, sans-serif, serif;
+        color: rgb(255, 255, 255);
+    }
+
+    #role-mobile {
+        text-align: center;
+        color:white;
+    }
+
+    #education-sidebar-mobile {
+        text-align: center;
+        list-style: none;
+        padding-left:0px;
+        color:white;
+    }
+
+    .project-row-desktop {
+        display: none;
+    }
+
+    .project-row-mobile {
+        display: block;
+    }
+
+    .project-mini-row-mobile {
+        padding-top:10px;
+        padding-bottom: 10px;
+    }
+
+    .copyright-mobile {
+        display: block;
+        text-align: center;
+        padding-bottom:10px;
+    }
+}
