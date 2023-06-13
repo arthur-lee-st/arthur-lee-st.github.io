@@ -100,6 +100,7 @@ a:hover {
 #role-desktop {
     padding-left:10px;
     color:white;
+    font-size:14px;
 }
 
 #education-sidebar-desktop {
@@ -107,7 +108,7 @@ a:hover {
     text-align: left;
     padding-left:10px;
     color:white;
-    font-size:12px;
+    font-size:14px;
 }
 
 #contact-links {
